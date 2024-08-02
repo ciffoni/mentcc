@@ -42,6 +42,7 @@
             button2 = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
+            codigo = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -156,12 +157,20 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { codigo });
             dataGridView1.Location = new Point(321, 42);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(454, 188);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // codigo
+            // 
+            codigo.HeaderText = "codigo";
+            codigo.MinimumWidth = 6;
+            codigo.Name = "codigo";
+            codigo.Width = 125;
             // 
             // Form1
             // 
@@ -206,5 +215,6 @@
         private Button button2;
         private Button button3;
         private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn codigo;
     }
 }

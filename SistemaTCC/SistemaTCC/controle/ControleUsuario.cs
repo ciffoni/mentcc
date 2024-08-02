@@ -17,7 +17,7 @@ namespace SistemaTCC.controle
         public bool cadastrar(ModeloUsuariocs usuario)
         {
             //inicializar a variavel resultado do operacao 
-            bool resultuado = false;
+            bool resultado = false;
             try
             {
 
@@ -31,13 +31,13 @@ namespace SistemaTCC.controle
                 //testar o insert no banco de dados
                 if (con.cadastrar(0, campos, valores, sql) >= 1)
                 {
-                    resultuado = true;
+                    resultado = true;
                 }
                 else
                 {
-                    resultuado = false;
+                    resultado = false;
                 }
-                return resultuado;
+                return resultado;
             } catch (Exception ex)
             {
                 throw new Exception(ex.ToString());
@@ -45,6 +45,35 @@ namespace SistemaTCC.controle
 
 
         
+        }
+        public bool editar(ModeloUsuariocs usuario)
+        {
+            bool resultado = false;
+            try
+            {
+
+
+                //monta o script sql de cadastrar as informações no banco
+                string sql = "update set usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo)";
+                //monto o vetor de atributos da tabela usuario
+                string[] campos = { "@nome", "@email", "@senha", "@cargo" };
+                //monto o vetor com os valores do formulario
+                string[] valores = { usuario.nome, usuario.email, usuario.senha, usuario.cargo.ToString() };
+                //testar o insert no banco de dados
+                if (con.cadastrar(usuario.cod_usuario, campos, valores, sql) >= 1)
+                {
+                    resultado = true;
+                }
+                else
+                {
+                    resultado = false;
+                }
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
         }
     }
 }
