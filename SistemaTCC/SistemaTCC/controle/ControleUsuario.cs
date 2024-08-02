@@ -25,11 +25,11 @@ namespace SistemaTCC.controle
                 //monta o script sql de cadastrar as informações no banco
                 string sql = "insert into usuario(nome,email,senha,cargo)values(@nome,@email,@senha,@cargo)";
                 //monto o vetor de atributos da tabela usuario
-                string[] campos = { "@nome", "@email", "@enha", "@cargo" };
+                string[] campos = { "@nome", "@email", "@senha", "@cargo" };
                 //monto o vetor com os valores do formulario
                 string[] valores = { usuario.nome, usuario.email, usuario.senha, usuario.cargo.ToString() };
                 //testar o insert no banco de dados
-                if (con.cadastrar(usuario.cod_usuario, campos, valores, sql) >= 1)
+                if (con.cadastrar(0, campos, valores, sql) >= 1)
                 {
                     resultuado = true;
                 }

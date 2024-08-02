@@ -38,7 +38,7 @@
             txtEmail = new TextBox();
             txtSenha = new TextBox();
             txtCargo = new TextBox();
-            button1 = new Button();
+            btnCadastrar = new Button();
             button2 = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
@@ -125,14 +125,15 @@
             txtCargo.Size = new Size(125, 27);
             txtCargo.TabIndex = 9;
             // 
-            // button1
+            // btnCadastrar
             // 
-            button1.Location = new Point(22, 259);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 10;
-            button1.Text = "Cadastrsr";
-            button1.UseVisualStyleBackColor = true;
+            btnCadastrar.Location = new Point(22, 259);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(94, 29);
+            btnCadastrar.TabIndex = 10;
+            btnCadastrar.Text = "Cadastrsr";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // button2
             // 
@@ -158,7 +159,7 @@
             dataGridView1.Location = new Point(321, 42);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(300, 188);
+            dataGridView1.Size = new Size(454, 188);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -170,7 +171,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnCadastrar);
             Controls.Add(txtCargo);
             Controls.Add(txtSenha);
             Controls.Add(txtEmail);
@@ -183,6 +184,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -200,7 +202,7 @@
         private TextBox txtEmail;
         private TextBox txtSenha;
         private TextBox txtCargo;
-        private Button button1;
+        private Button btnCadastrar;
         private Button button2;
         private Button button3;
         private DataGridView dataGridView1;

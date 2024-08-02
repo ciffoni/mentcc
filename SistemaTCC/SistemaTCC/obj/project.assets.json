@@ -1613,11 +1613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\source\\repos\\SistemaTCC\\SistemaTCC\\SistemaTCC.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\SistemaTCC.csproj",
       "projectName": "SistemaTCC",
-      "projectPath": "C:\\Users\\Aluno\\source\\repos\\SistemaTCC\\SistemaTCC\\SistemaTCC.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\SistemaTCC.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\source\\repos\\SistemaTCC\\SistemaTCC\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
