@@ -6,7 +6,7 @@ namespace SistemaTCC
     public partial class Form1 : Form
     {
         //criar a instancia  do objeto usuário 
-        ModeloUsuariocs mUsuario= new ModeloUsuariocs();
+        ModeloUsuariocs mUsuario = new ModeloUsuariocs();
         ControleUsuario cUsuario = new ControleUsuario();
         Clonexao conexao = new Clonexao();
         public Form1()
@@ -21,7 +21,7 @@ namespace SistemaTCC
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             //chama o metodo de obter as informações do banco e carrega no datagrid
             dataGridView1.DataSource = conexao.obterdados("select * from usuario");
         }
@@ -55,11 +55,35 @@ namespace SistemaTCC
                     MessageBox.Show("Erro no cadastrado do usuário!");
 
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Erro:" + ex.Message);
             }
 
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+            
+            //populo meu objeto usuário
+            mUsuario.cod_usuario=Convert.ToInt32(txtCodigo.Text);
+            mUsuario.nome=txtNome.Text;
+            mUsuario.senha=txtSenha.Text;
+            mUsuario.cargo=Convert.ToInt32(txtCargo.Text);
+            mUsuario.email=txtEmail.Text;
+            //chama o metodo de editar as informações do usuario
+            if(cUsuario.editar(mUsuario) == true)
+            {
+                MessageBox.Show("Atualizado o usuário com sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Erro ao atualizar as infomrações");
+            }
         }
     }
 }

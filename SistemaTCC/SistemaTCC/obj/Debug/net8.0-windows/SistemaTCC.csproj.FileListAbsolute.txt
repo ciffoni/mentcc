@@ -9,7 +9,6 @@ C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-wi
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\MySql.Data.dll
-C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\ZstdSharp.dll
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll

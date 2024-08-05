@@ -39,7 +39,7 @@
             txtSenha = new TextBox();
             txtCargo = new TextBox();
             btnCadastrar = new Button();
-            button2 = new Button();
+            btnEditar = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
             codigo = new DataGridViewTextBoxColumn();
@@ -136,14 +136,15 @@
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
             // 
-            // button2
+            // btnEditar
             // 
-            button2.Location = new Point(128, 259);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 11;
-            button2.Text = "Editar";
-            button2.UseVisualStyleBackColor = true;
+            btnEditar.Location = new Point(128, 259);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(94, 29);
+            btnEditar.TabIndex = 11;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // button3
             // 
@@ -179,7 +180,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
             Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnEditar);
             Controls.Add(btnCadastrar);
             Controls.Add(txtCargo);
             Controls.Add(txtSenha);
@@ -212,7 +213,7 @@
         private TextBox txtSenha;
         private TextBox txtCargo;
         private Button btnCadastrar;
-        private Button button2;
+        private Button btnEditar;
         private Button button3;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn codigo;

@@ -62,7 +62,7 @@ namespace SistemaTCC
                     //pega os valores do formulario com os campos do banco 
                     cmd.Parameters.AddWithValue(campos[i], valores[i]);
                 }
-                if(registro >0)
+                if(codigo >0)
                 {
                     //se o codigo existir no registro será substituido aqui para execução
                     cmd.Parameters.AddWithValue("@id", codigo);

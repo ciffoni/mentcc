@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\sistematcc\\controle\\controleusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\controle\\controleusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\sistematcc\\clonexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\clonexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\sistematcc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\sistematcc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|c:\\users\\aluno\\documents\\github\\mentcc\\sistematcc\\sistematcc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\sistematcc\\clonexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\clonexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|c:\\users\\aluno\\documents\\github\\mentcc\\sistematcc\\sistematcc\\controle\\controleusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\controle\\controleusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\sistematcc\\modelo\\modelousuariocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\modelo\\modelousuariocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|c:\\users\\aluno\\documents\\github\\mentcc\\sistematcc\\sistematcc\\sistematcc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C2361765-985F-4564-8588-8B0F90798C60}|SistemaTCC\\SistemaTCC.csproj|solutionrelative:sistematcc\\sistematcc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "SistemaTCC",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\SistemaTCC.csproj",
+              "RelativeDocumentMoniker": "SistemaTCC\\SistemaTCC.csproj",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\SistemaTCC.csproj",
+              "RelativeToolTip": "SistemaTCC\\SistemaTCC.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-05T11:31:06.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ControleUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\controle\\ControleUsuario.cs",
               "RelativeDocumentMoniker": "SistemaTCC\\controle\\ControleUsuario.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\controle\\ControleUsuario.cs",
               "RelativeToolTip": "SistemaTCC\\controle\\ControleUsuario.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAIwEQAAAANAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAADwvz4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T13:29:43.428Z",
               "EditorCaption": ""
@@ -53,39 +70,40 @@
               "RelativeDocumentMoniker": "SistemaTCC\\modelo\\ModeloUsuariocs.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\modelo\\ModeloUsuariocs.cs",
               "RelativeToolTip": "SistemaTCC\\modelo\\ModeloUsuariocs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T12:58:05.532Z"
+              "WhenOpened": "2024-08-02T12:58:05.532Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Clonexao.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\Clonexao.cs",
               "RelativeDocumentMoniker": "SistemaTCC\\Clonexao.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\Clonexao.cs",
               "RelativeToolTip": "SistemaTCC\\Clonexao.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAiwFEAAAAJAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAA9wGQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T12:55:06.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\Form1.cs",
               "RelativeDocumentMoniker": "SistemaTCC\\Form1.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\Form1.cs",
               "RelativeToolTip": "SistemaTCC\\Form1.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAcwBcAAAAMAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAUwEcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T11:32:44.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\mentcc\\SistemaTCC\\SistemaTCC\\Form1.cs",
               "RelativeDocumentMoniker": "SistemaTCC\\Form1.cs",

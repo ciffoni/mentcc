@@ -54,7 +54,7 @@ namespace SistemaTCC.controle
 
 
                 //monta o script sql de cadastrar as informações no banco
-                string sql = "update set usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo)";
+                string sql = "update usuario set nome=@nome,email=@email,senha=@senha,cargo=@cargo where cod_usuario=@id)";
                 //monto o vetor de atributos da tabela usuario
                 string[] campos = { "@nome", "@email", "@senha", "@cargo" };
                 //monto o vetor com os valores do formulario
