@@ -80,6 +80,39 @@ namespace SistemaTCC
 
             return registro; 
         }
+        public int excluir(int codigo, string SQL)
+        {
+            //registro de validação do script
+            int registro = 0;
+            try
+            {
+                //atribuo a conexao obtida
+                conn = getConexao();
+                //abro o banco de dados
+                conn.Open();
+                //preparo para executar o script SQL
+                MySqlCommand cmd = new MySqlCommand(SQL, conn);
+                //monto s script sql
+                //pegar os cmapos do vetor
+                if (codigo > 0)
+                {
+                    //se o codigo existir no registro será substituido aqui para execução
+                    cmd.Parameters.AddWithValue("@id", codigo);
+                }
+                //executa o script sql
+                registro = cmd.ExecuteNonQuery();
+                //fecha a conexao com o banco
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                //gera uma excessão há algum erro no codigo
+                throw new Exception(ex.Message);
+            }
+
+            return registro;
+        }
+
         //metodo para pegar as informações do banco de dados
         //passo o parametro da 
         public DataTable obterdados(string sql)

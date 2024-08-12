@@ -42,7 +42,6 @@
             btnEditar = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
-            codigo = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -154,24 +153,20 @@
             button3.TabIndex = 12;
             button3.Text = "Excluir";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { codigo });
             dataGridView1.Location = new Point(321, 42);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(454, 188);
             dataGridView1.TabIndex = 13;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // codigo
-            // 
-            codigo.HeaderText = "codigo";
-            codigo.MinimumWidth = 6;
-            codigo.Name = "codigo";
-            codigo.Width = 125;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
+            dataGridView1.SizeChanged += dataGridView1_SizeChanged;
+            dataGridView1.Click += dataGridView1_Click;
             // 
             // Form1
             // 
@@ -216,6 +211,5 @@
         private Button btnEditar;
         private Button button3;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn codigo;
     }
 }

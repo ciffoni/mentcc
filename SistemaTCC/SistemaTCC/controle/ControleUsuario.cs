@@ -75,5 +75,34 @@ namespace SistemaTCC.controle
                 throw new Exception(ex.ToString());
             }
         }
+        public bool excluir (ModeloUsuariocs usuario)
+        {
+            bool resultado = false;
+            try
+            {
+
+
+                //monta o script sql de cadastrar as informações no banco
+                string sql = "delete from usuario where cod_usuario=@id)";
+                //monto o vetor de atributos da tabela usuario
+                if (con.cadastrar(usuario.cod_usuario,sql) >= 1)
+                {
+                    resultado = true;
+                }
+                else
+                {
+                    resultado = false;
+                }
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
+
+
+
+            return resultado;
+        }
     }
 }
