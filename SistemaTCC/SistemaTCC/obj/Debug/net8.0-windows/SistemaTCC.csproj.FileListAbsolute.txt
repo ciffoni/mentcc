@@ -30,3 +30,4 @@ C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-wi
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\SistemaTCC.pdb
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\SistemaTCC.genruntimeconfig.cache
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\ref\SistemaTCC.dll
+C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\SistemaTCC.FrmLogin.resources

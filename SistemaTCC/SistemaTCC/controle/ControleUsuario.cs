@@ -1,4 +1,5 @@
-﻿using SistemaTCC.modelo;
+﻿using MySql.Data.MySqlClient;
+using SistemaTCC.modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,7 +86,7 @@ namespace SistemaTCC.controle
                 //monta o script sql de cadastrar as informações no banco
                 string sql = "delete from usuario where cod_usuario=@id)";
                 //monto o vetor de atributos da tabela usuario
-                if (con.cadastrar(usuario.cod_usuario,sql) >= 1)
+                if (con.excluir(usuario.cod_usuario,sql) >= 1)
                 {
                     resultado = true;
                 }
@@ -100,9 +101,28 @@ namespace SistemaTCC.controle
                 throw new Exception(ex.ToString());
             }
 
-
-
             return resultado;
+        }
+        public int logar(ModeloUsuariocs usuario)
+        {
+            try
+            {
+                //iniciar variavel zerada
+                int registro = 0;
+                //preparo a consulta 
+                string sql = "select cod_usuario from usuario where email=@email and senha=@senha";
+                MySqlConnection com = con.getConexao();//abro o banco de dados
+                com.Open();
+                MySqlCommand cmd = new MySqlCommand(sql, com);//preparo a execução
+                cmd.Parameters.AddWithValue("@email", usuario.email);
+                cmd.Parameters.AddWithValue("@senha", usuario.senha);
+                registro = Convert.ToInt32(cmd.ExecuteScalar());//
+                return registro;// retorna o ID
+
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.ToString()); 
+            }
         }
     }
 }

@@ -90,6 +90,7 @@ namespace SistemaTCC
         private void button3_Click(object sender, EventArgs e)
         {
 
+
         }
 
         private void dataGridView1_SizeChanged(object sender, EventArgs e)
@@ -115,6 +116,8 @@ namespace SistemaTCC
             txtCodigo.Text = row.Cells["cod_usuario"].Value.ToString();
             txtNome.Text = row.Cells["nome"].Value.ToString();
             txtEmail.Text = row.Cells["email"].Value.ToString();
+            txtSenha.Text= row.Cells["senha"].Value.ToString() ;
+            txtCargo.Text = row.Cells["cargo"].Value.ToString();
             //Or you can store the information you've got here to some
             //Variable you can use to open the form you want.         
             //}
