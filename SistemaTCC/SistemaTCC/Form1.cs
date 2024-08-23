@@ -80,6 +80,8 @@ namespace SistemaTCC
             if (cUsuario.editar(mUsuario) == true)
             {
                 MessageBox.Show("Atualizado o usuário com sucesso");
+            
+            
             }
             else
             {
@@ -89,7 +91,17 @@ namespace SistemaTCC
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            ModeloUsuariocs modeloUsu = new ModeloUsuariocs();
+            modeloUsu.cod_usuario=Convert.ToInt32(txtCodigo.Text);
+            ControleUsuario cusu=new ControleUsuario();
+            if(cusu.excluir(modeloUsu)== true)
+            {
+                MessageBox.Show("Usuário excluído com sucesso! ");
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir o usuário");
+            }
 
         }
 
