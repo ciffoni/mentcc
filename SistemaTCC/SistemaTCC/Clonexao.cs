@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Net.Mail;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-//adicionar a biblioteca mysql conexao
+﻿//adicionar a biblioteca mysql conexao
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace SistemaTCC
 {
@@ -17,19 +10,19 @@ namespace SistemaTCC
         //variavel estatica e privada
         //servidor nome do dominio ou IP
         static private string servidor = "localhost";
-            //nome do banco de dados 
-        static private string DB ="projeto";
-            //usuário do banco de dados;
-            static private string usuario="root";
-            //senha de acesso ao banco de dados
-            static private string senhas="";
-            //variavel de conexao ao banco de dados
-            public MySqlConnection conn = null;
+        //nome do banco de dados 
+        static private string DB = "projeto";
+        //usuário do banco de dados;
+        static private string usuario = "root";
+        //senha de acesso ao banco de dados
+        static private string senhas = "";
+        //variavel de conexao ao banco de dados
+        public MySqlConnection conn = null;
         //determinar o caminho da conexao ao banco
         static private string StrConexao = "server=" + servidor + ";database=" + DB +
             ";user id=" + usuario + ";password=" + senhas;
-    
-    //criar os metodos de conexao
+
+        //criar os metodos de conexao
 
         public MySqlConnection getConexao()
         {
@@ -42,43 +35,43 @@ namespace SistemaTCC
         //variavel campos são os atributos da entidade
         //variavel valores são os conteúdos preenchidos no form
         //variavel sql  é o comando a ser realizado
-        public int cadastrar(int codigo, string[] campos, object[] valores,string SQL)
+        public int cadastrar(int codigo, string[] campos, object[] valores, string SQL)
         {
             //registro de validação do script
-            int registro=0;
+            int registro = 0;
             try
             {
                 //atribuo a conexao obtida
-                conn=getConexao();
+                conn = getConexao();
                 //abro o banco de dados
                 conn.Open();
                 //preparo para executar o script SQL
-                MySqlCommand cmd=new MySqlCommand(SQL, conn);
+                MySqlCommand cmd = new MySqlCommand(SQL, conn);
                 //monto s script sql
                 //pegar os cmapos do vetor
-                for(int i = 0; i < valores.Length; i++)
+                for (int i = 0; i < valores.Length; i++)
                 {
                     //monta a lista de paramentros juntando os campos e valores
                     //pega os valores do formulario com os campos do banco 
                     cmd.Parameters.AddWithValue(campos[i], valores[i]);
                 }
-                if(codigo >0)
+                if (codigo > 0)
                 {
                     //se o codigo existir no registro será substituido aqui para execução
                     cmd.Parameters.AddWithValue("@id", codigo);
                 }
                 //executa o script sql
-                registro=cmd.ExecuteNonQuery();
+                registro = cmd.ExecuteNonQuery();
                 //fecha a conexao com o banco
                 conn.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 //gera uma excessão há algum erro no codigo
                 throw new Exception(ex.Message);
             }
 
-            return registro; 
+            return registro;
         }
         public int excluir(int codigo, string SQL)
         {
@@ -123,11 +116,11 @@ namespace SistemaTCC
             conn.Open();//abro o banco
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             //monto a estrutura das informações obtidas
-            MySqlDataAdapter adapter= new MySqlDataAdapter(cmd);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             //adiciona a datatable os valores 
             adapter.Fill(dt);
 
-            return dt; 
+            return dt;
         }
     }
 }

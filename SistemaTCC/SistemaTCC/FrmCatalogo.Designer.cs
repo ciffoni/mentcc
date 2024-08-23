@@ -47,6 +47,7 @@
             Controls.Add(flowLayoutPanel1);
             Name = "FrmCatalogo";
             Text = "FrmCatalogo";
+            Load += FrmCatalogo_Load;
             ResumeLayout(false);
         }
 

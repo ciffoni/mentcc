@@ -1,10 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using SistemaTCC.modelo;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaTCC.controle
 {
@@ -12,7 +7,7 @@ namespace SistemaTCC.controle
     public class ControleUsuario
     {
         //chamo o objeto de conexao
-        Clonexao con=new Clonexao();
+        Clonexao con = new Clonexao();
 
         //metodo para cadastrar usuario
         public bool cadastrar(ModeloUsuariocs usuario)
@@ -39,13 +34,14 @@ namespace SistemaTCC.controle
                     resultado = false;
                 }
                 return resultado;
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.ToString());
             }
 
 
-        
+
         }
         public bool editar(ModeloUsuariocs usuario)
         {
@@ -76,7 +72,7 @@ namespace SistemaTCC.controle
                 throw new Exception(ex.ToString());
             }
         }
-        public bool excluir (ModeloUsuariocs usuario)
+        public bool excluir(ModeloUsuariocs usuario)
         {
             bool resultado = false;
             try
@@ -86,7 +82,7 @@ namespace SistemaTCC.controle
                 //monta o script sql de cadastrar as informações no banco
                 string sql = "delete from usuario where cod_usuario=@id)";
                 //monto o vetor de atributos da tabela usuario
-                if (con.excluir(usuario.cod_usuario,sql) >= 1)
+                if (con.excluir(usuario.cod_usuario, sql) >= 1)
                 {
                     resultado = true;
                 }
@@ -119,9 +115,10 @@ namespace SistemaTCC.controle
                 registro = Convert.ToInt32(cmd.ExecuteScalar());//
                 return registro;// retorna o ID
 
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                throw new Exception(ex.ToString()); 
+                throw new Exception(ex.ToString());
             }
         }
     }

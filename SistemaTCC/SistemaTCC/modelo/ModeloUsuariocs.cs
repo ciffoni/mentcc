@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SistemaTCC.modelo
+﻿namespace SistemaTCC.modelo
 {
     //crio o modelo com as informações do usuario
     public class ModeloUsuariocs
@@ -16,7 +10,8 @@ namespace SistemaTCC.modelo
         public string senha;
         public int cargo;
         //construtor da classe usuario 
-        public ModeloUsuariocs() {
+        public ModeloUsuariocs()
+        {
             //inicializar as variaveis zeradas
             nome = null;
             email = null;
