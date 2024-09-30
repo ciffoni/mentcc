@@ -60,7 +60,7 @@ namespace SistemaTCC
                 consultar.Name = "consultar";
                 consultar.Text = "Consultar";
                 consultar.Location = new Point(25, y);
-                consultar.Click += new EventHandler((sender,e1)=> ReservarClick(sender,e1,idcliente.Text);  
+                consultar.Click += new EventHandler((sender,e1)=> ReservarClick(sender,e1,idcliente.Text));  
                 cliente.Controls.Add(idcliente);
                 cliente.Controls.Add(nome);
                 cliente.Controls.Add(cargo);

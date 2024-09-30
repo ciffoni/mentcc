@@ -32,4 +32,3 @@ C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-wi
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\ref\SistemaTCC.dll
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\SistemaTCC.FrmLogin.resources
 C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\obj\Debug\net8.0-windows\SistemaTCC.FrmCatalogo.resources
-C:\Users\Aluno\Documents\GitHub\mentcc\SistemaTCC\SistemaTCC\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll

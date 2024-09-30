@@ -9,15 +9,15 @@ namespace SistemaTCC
         //variaveis de conexao com o mysql
         //variavel estatica e privada
         //servidor nome do dominio ou IP
-        static private string servidor = "sql10.freemysqlhosting.net";
+        static private string servidor = "localhost";
         //nome do banco de dados 
-        static private string DB = "sql10731081";
+        static private string DB = "projeto";
         //usuário do banco de dados;
-        static private string usuario = "sql10731081";
+        static private string usuario = "root";
         //senha de acesso ao banco de dados
-        static private string senhas = "sua senha";
+        static private string senhas = "";
         //variavel de conexao ao banco de dados
-        public MySqlConnection conn = null;
+        public MySqlConnection conn;
         //determinar o caminho da conexao ao banco
         static private string StrConexao = "server=" + servidor + ";database=" + DB +
             ";user id=" + usuario + ";password=" + senhas;
